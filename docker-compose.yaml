@@ -10,17 +10,17 @@ services:
     environment:
       - MARIADB_HOST=db
       - MARIADB_PORT_NUMBER=3306
-      - DRUPAL_DATABASE_USER=cessur
-      - DRUPAL_DATABASE_PASSWORD=123
-      - DRUPAL_DATABASE_NAME=cessur
+      - DRUPAL_DATABASE_USER=YAM428
+      - DRUPAL_DATABASE_PASSWORD=030118002
+      - DRUPAL_DATABASE_NAME=final
 
   db:
     image: bitnami/mariadb:latest
     environment:
       - MARIADB_ROOT_PASSWORD=root
-      - MARIADB_DATABASE=cessur
-      - MARIADB_USER=cessur
-      - MARIADB_PASSWORD=123
+      - MARIADB_DATABASE=final
+      - MARIADB_USER=YAN428
+      - MARIADB_PASSWORD=030118002
 
   webserver:
     image: nginx
